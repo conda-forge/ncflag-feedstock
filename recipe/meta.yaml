@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: ncflag
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/5tefan/ncflag/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 6fd91275bb4e4c42dc730707a3be37caa3037e2d6ce118a341cddfcdf649985d
+  sha256: 7f2a291e9af5b02f89838d3cef2e971c7d97db9e5737c3174fa48d4189db8f65
 
 build:
   noarch: python
