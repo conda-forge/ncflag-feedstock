@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: ncflag
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/5tefan/ncflag/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7f2a291e9af5b02f89838d3cef2e971c7d97db9e5737c3174fa48d4189db8f65
+  sha256: fe2dc902dd30d6175ed71e9842312c0c31b86a5d5d229de35213536c55ef4d0e
 
 build:
   noarch: python
@@ -20,12 +20,11 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - pypandoc
   run:
     - python >=3.7
     - numpy
     - netcdf4
-    - click >=7.0,<8.0
+    - click
 
 test:
   imports:
