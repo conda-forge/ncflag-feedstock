@@ -12,16 +12,16 @@ build:
   noarch: python
   entry_points:
     - "ncflag = ncflag.cli:cli"
-  number: 0
+  number: 1
   script: 
     - "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - numpy
     - netcdf4
     - click
@@ -31,6 +31,7 @@ test:
     - ncflag
   requires:
     - pip
+    - python {{ python_min }}
   source_files:
     - test/
   commands:
