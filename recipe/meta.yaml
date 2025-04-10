@@ -31,8 +31,8 @@ test:
   imports:
     - ncflag
   requires:
-    - pip
     - python {{ python_min }}
+    - pip
   source_files:
     - test/
   commands:
